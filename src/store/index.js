@@ -14,6 +14,19 @@ let api = Axios.create({
 export default new Vuex.Store({
   state: {
     profile: {},
+    chores: [
+      { id: "1", description: "description1", title: "dishes", reward: 1.25 },
+      {
+        id: "2",
+        description: "description2",
+        title: "sweep and mop",
+        reward: 1.0,
+      },
+    ],
+    helpers: [
+      { name: "chris", chores: ["1", "2", "1", "2"] },
+      { name: "dad", chores: ["1", "2", "1", "2"] },
+    ],
   },
   mutations: {
     setProfile(state, profile) {

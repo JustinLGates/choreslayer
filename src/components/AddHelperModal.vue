@@ -1,15 +1,10 @@
 <template>
 <div>
 
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AddHelperModal">
-  Launch demo modal
-</button>
-
 <!-- Modal -->
-<div class="modal fade" id="AddHelperModal" tabindex="-1" role="dialog" aria-labelledby="AddHelperModalTitle" aria-hidden="true">
+<div class="modal fade bg-dark" id="AddHelperModal" tabindex="-1" role="dialog" aria-labelledby="AddHelperModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
+    <div class="modal-content bg-light">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLongTitle">Add Helper</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -17,11 +12,12 @@
         </button>
       </div>
       <div class="modal-body">
-        ...
+      <h4>Name</h4>
+      <input type="text" placeholder="Chris">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-danger text-light" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success text-light">Add helper</button>
       </div>
     </div>
   </div>
